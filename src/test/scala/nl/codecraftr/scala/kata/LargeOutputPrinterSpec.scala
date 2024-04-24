@@ -4,12 +4,11 @@ import org.junit.jupiter.api.Test
 
 import scala.util.chaining.scalaUtilChainingOps;
 
-/**
- * Next we have to get the [[LargeOutputPrinter]] under test.
- * It's relatively simple, but the output can be unwieldy.
- *
- * Once again, let's see how approval tests can help.
- */
+/** Next we have to get the [[LargeOutputPrinter]] under test. It's relatively
+  * simple, but the output can be unwieldy.
+  *
+  * Once again, let's see how approval tests can help.
+  */
 class LargeOutputPrinterSpec {
   @Test
   def shouldPrintStatementGivenBooks(): Unit = {
@@ -46,4 +45,6 @@ class LargeOutputPrinterSpec {
     // 6 - TODO: Capture and approve the new output
     // 7 - Q: What was this workflow like? Any pro's and cons?
   }
+
+  /** Done? Move to [[ComplexStructureBuilderSpec]]. */
 }

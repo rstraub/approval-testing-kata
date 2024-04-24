@@ -19,6 +19,7 @@ However, there are drawbacks. Nothing comes for free, and this technique has tra
 - Makes creating assertions easy, but diminishes intentionality
 - Easy to update assertions, but lowers the barrier to do so
 - Cannot deal with non-deterministic output
+- Doesn't work with non-deterministic input (e.g., parameterized tests)
 
 So, should we throw our unit tests overboard in favor of approval tests? No. They
 fulfill different needs, and can work complementary. Rather than and/or I see approval

@@ -36,4 +36,6 @@ class LegacyPrinterSpec {
     // Bonus: develop this feature using approval tests and Test-Driven Unit Testing
     // How do they differ?
   }
+
+    /** Done? Move to [[LargeOutputPrinterSpec]]. */
 }

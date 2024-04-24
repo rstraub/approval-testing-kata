@@ -10,6 +10,8 @@ ThisBuild / scalafixScalaBinaryVersion := "2.13"
 ThisBuild / javacOptions ++= Seq("-source", "21", "-target", "21")
 tpolecatScalacOptions += ScalacOptions.release("21")
 
+val circeVersion = "0.14.1"
+
 lazy val root = project
   .enablePlugins(ScalafmtPlugin)
   .in(file("."))
@@ -22,6 +24,12 @@ lazy val root = project
       scalaCheck,
       approvalsTests,
       mockito,
-      catsCore
-    )
+      catsCore,
+      "com.google.code.gson" % "gson" % "2.10.1" % Test
+    ),
+    libraryDependencies ++= Seq(
+      "io.circe" %% "circe-core",
+      "io.circe" %% "circe-generic",
+      "io.circe" %% "circe-parser"
+    ).map(_ % circeVersion)
   )

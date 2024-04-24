@@ -12,6 +12,10 @@ implementation, but the technique can be achieved in other ways too
 
 ## Exercises
 
+Exercises are self-contained in test files.
+Start your journey in the
+[LegacyPrinterSpec](src/test/scala/nl/codecraftr/scala/kata/LegacyPrinterSpec.scala).
+
 ## Questions
 
 - How does approval testing differ from 'good old' unit testing?
